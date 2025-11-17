@@ -1,267 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abed Alameh | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
-  <style>
-   body {
-    background: #f4f6f8;
-    font-family: 'Montserrat', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abed Alameh | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            background: #f4f6f8;
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-.cv-container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 4px 32px rgba(44,62,80,0.10);
-    display: flex;
-    overflow: hidden;
-}
+        .cv-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(44, 62, 80, 0.10);
+            display: flex;
+            overflow: hidden;
+        }
 
-.cv-sidebar {
-    background: linear-gradient(135deg, #4a90e2 60%, #232526 100%);
-    color: #fff;
-    width: 290px;
-    padding: 38px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .cv-sidebar {
+            background: linear-gradient(135deg, #4a90e2 60%, #232526 100%);
+            color: #fff;
+            width: 290px;
+            padding: 38px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.cv-sidebar .profile-img {
-    width: 270px;
-    height: 270px;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    margin-bottom: 18px;
-    box-shadow: 0 2px 12px rgba(74,144,226,0.13);
-}
+        .cv-sidebar .profile-img {
+            width: 270px;
+            height: 270px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 12px rgba(74, 144, 226, 0.13);
+        }
 
-.cv-sidebar h2 {
-    margin: 0 0 8px 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
+        .cv-sidebar h2 {
+            margin: 0 0 8px 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
 
-.cv-sidebar .cv-title {
-    font-size: 1.02rem;
-    color: #eaf3fb;
-    margin-bottom: 18px;
-}
+        .cv-sidebar .cv-title {
+            font-size: 1.02rem;
+            color: #eaf3fb;
+            margin-bottom: 18px;
+        }
 
-.cv-sidebar .cv-info {
-    font-size: 0.98rem;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+        .cv-sidebar .cv-info {
+            font-size: 0.98rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-.cv-sidebar .cv-info i {
-    color: #fff;
-    font-size: 1.1em;
-}
+        .cv-sidebar .cv-info i {
+            color: #fff;
+            font-size: 1.1em;
+        }
 
-.cv-sidebar .cv-social {
-    margin-top: 18px;
-    display: flex;
-    gap: 18px;
-}
+        .cv-sidebar .cv-social {
+            margin-top: 18px;
+            display: flex;
+            gap: 18px;
+        }
 
-.cv-sidebar .cv-social a {
-    color: #fff;
-    background: #4a90e2;
-    border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    transition: background 0.2s, color 0.2s;
-}
+        .cv-sidebar .cv-social a {
+            color: #fff;
+            background: #4a90e2;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            transition: background 0.2s, color 0.2s;
+        }
 
-.cv-sidebar .cv-social a:hover {
-    background: #fff;
-    color: #4a90e2;
-}
+        .cv-sidebar .cv-social a:hover {
+            background: #fff;
+            color: #4a90e2;
+        }
 
-.cv-main {
-    flex: 1;
-    padding: 38px 36px;
-}
+        .cv-main {
+            flex: 1;
+            padding: 38px 36px;
+        }
 
-.cv-main h1 {
-    margin: 0 0 8px 0;
-    font-size: 2.1rem;
-    color: #232526;
-    font-weight: 700;
-}
+        .cv-main h1 {
+            margin: 0 0 8px 0;
+            font-size: 2.1rem;
+            color: #232526;
+            font-weight: 700;
+        }
 
-.cv-main .about {
-    color: #444;
-    font-size: 1.08rem;
-    margin-bottom: 24px;
-    line-height: 1.7;
-}
+        .cv-main .about {
+            color: #444;
+            font-size: 1.08rem;
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
 
-.cv-section {
-    margin-bottom: 28px;
-}
+        .cv-section {
+            margin-bottom: 28px;
+        }
 
-.cv-section h3 {
-    color: #4a90e2;
-    font-size: 1.15rem;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
+        .cv-section h3 {
+            color: #4a90e2;
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
 
-.cv-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+        .cv-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.cv-list li {
-    margin-bottom: 8px;
-    color: #232526;
-    font-size: 1.01rem;
-}
+        .cv-list li {
+            margin-bottom: 8px;
+            color: #232526;
+            font-size: 1.01rem;
+        }
 
-.cv-edu, .cv-exp {
-    margin-bottom: 12px;
-}
+        .cv-edu,
+        .cv-exp {
+            margin-bottom: 12px;
+        }
 
-.cv-edu-title, .cv-exp-title {
-    font-weight: 600;
-    color: #232526;
-}
+        .cv-edu-title,
+        .cv-exp-title {
+            font-weight: 600;
+            color: #232526;
+        }
 
-.cv-edu-date, .cv-exp-date {
-    color: #4a90e2;
-    font-size: 0.97em;
-    margin-left: 8px;
-}
+        .cv-edu-date,
+        .cv-exp-date {
+            color: #4a90e2;
+            font-size: 0.97em;
+            margin-left: 8px;
+        }
 
-@media (max-width: 900px) {
-    .cv-container {
-        flex-direction: column;
-        max-width: 98vw;
-    }
-    .cv-sidebar {
-        width: 100%;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 18px 6px;
-        gap: 18px;
-    }
-    .cv-sidebar .profile-img {
-        width: 110px;
-        height: 110px;
-        margin-bottom: 0;
-        margin-right: 16px;
-    }
-    .cv-sidebar h2, .cv-sidebar .cv-title, .cv-sidebar .cv-info, .cv-sidebar .cv-social {
-        align-items: flex-start;
-        text-align: left;
-    }
-    .cv-main {
-        padding: 18px 6px;
-    }
-}
-@media (max-width: 600px) {
-    .cv-container {
-        border-radius: 0;
-        box-shadow: none;
-    }
-    .cv-sidebar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 2px;
-        gap: 0;
-    }
-    .cv-sidebar .profile-img {
-        width: 70px;
-        height: 70px;
-        margin: 0 0 10px 0;
-    }
-    .cv-main h1 {
-        font-size: 1.1rem;
-    }
-    .cv-main {
-        padding: 10px 2px;
-    }
-    .cv-section h3 {
-        font-size: 1rem;
-    }
-    .about, .cv-list li {
-        font-size: 0.97rem;
-    }
-}
+        @media (max-width: 900px) {
+            .cv-container {
+                flex-direction: column;
+                max-width: 98vw;
+            }
 
-  </style>
+            .cv-sidebar {
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 18px 6px;
+                gap: 18px;
+            }
+
+            .cv-sidebar .profile-img {
+                width: 110px;
+                height: 110px;
+                margin-bottom: 0;
+                margin-right: 16px;
+            }
+
+            .cv-sidebar h2,
+            .cv-sidebar .cv-title,
+            .cv-sidebar .cv-info,
+            .cv-sidebar .cv-social {
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .cv-main {
+                padding: 18px 6px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .cv-container {
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .cv-sidebar {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 2px;
+                gap: 0;
+            }
+
+            .cv-sidebar .profile-img {
+                width: 70px;
+                height: 70px;
+                margin: 0 0 10px 0;
+            }
+
+            .cv-main h1 {
+                font-size: 1.1rem;
+            }
+
+            .cv-main {
+                padding: 10px 2px;
+            }
+
+            .cv-section h3 {
+                font-size: 1rem;
+            }
+
+            .about,
+            .cv-list li {
+                font-size: 0.97rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="cv-container">
-    <div class="cv-sidebar">
-      <img src="WhatsApp Image 2025-05-07 at 21.36.40_8e4cd009.jpg" alt="Abed Alameh" class="profile-img" />
-      <h2>Abed Alameh</h2>
-      <div class="cv-title">Backend Developer</div>
-      <div class="cv-info"><i class="fa-solid fa-envelope"></i> abed.2003.ama@gamil.com</div>
-      <div class="cv-info"><i class="fa-solid fa-phone"></i> 0599495645</div>
-      <div class="cv-social">
-        <a href="https://github.com/abed2003" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/abed-alameh-447b60317/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-    <div class="cv-main">
-      <h1>Welcome to My Portfolio</h1>
-      <div class="about">
-        Hello! I'm <strong>Abed Alameh</strong>, a passionate backend developer and a lifelong learner. I hold a degree in Computer Science with a minor in Business Administration from Hebron University. I specialize in building robust backend systems, especially using ASP.NET Core and C#.<br><br>
-        One of my notable projects is a complete management system for a medical college, which includes features such as scheduling, clinical training management, student grouping, and evaluations.<br><br>
-        I am constantly working to improve myself by learning new technologies, participating in developer communities, and working on practical projects. I'm committed to clean, scalable code and delivering smart and efficient solutions.
-      </div>
-      <div class="cv-section">
-        <h3>Skills</h3>
-        <ul class="cv-list">
-          <li>ASP.NET Core &amp; C#</li>
-          <li>Postman </li>
-          <li>SQL</li>
-          <li>API</li>
-          <li>Problem Solving</li>
-          <li>Algorithms </li>
-          <li>Communication </li>
-          <li>Firebase </li>
-          <li>GitHub </li>
-        </ul>
-      </div>
-      <div class="cv-section">
-        <h3>Education</h3>
-        <div class="cv-edu">
-          <span class="cv-edu-title">B.S in Computer Science, Minor in Business Administration</span>
-          <span class="cv-edu-date">Hebron University</span>
+    <div class="cv-container">
+        <div class="cv-sidebar">
+            <img src="WhatsApp Image 2025-05-07 at 21.36.40_8e4cd009.jpg" alt="Abed Alameh" class="profile-img" />
+            <h2>Abed Alameh</h2>
+            <div class="cv-title">Backend Developer</div>
+            <div class="cv-info"><i class="fa-solid fa-envelope"></i> abed.2003.ama@gamil.com</div>
+            <div class="cv-info"><i class="fa-solid fa-phone"></i> 0599495645</div>
+            <div class="cv-social">
+                <a href="https://github.com/abed2003" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abed-alameh-447b60317/" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
         </div>
-      </div>
-      <div class="cv-section">
-        <h3>Projects</h3>
-        <div class="cv-exp">
-          <span class="cv-exp-title">Clinical Training System</span>
-          <span class="cv-exp-date">2025</span><br />
-          <span>
-            Designed and implemented a comprehensive system for managing the medical college's clinical training, scheduling, and student evaluation.
-          </span>
+        <div class="cv-main">
+            <h1>Welcome to My Portfolio</h1>
+            <div class="about">
+                Hello! I'm <strong>Abed Alameh</strong>, a passionate backend developer and a lifelong learner. I hold a
+                degree in Computer Science with a minor in Business Administration from Hebron University. I specialize
+                in building robust backend systems, especially using ASP.NET Core and C#.<br><br>
+                One of my notable projects is a complete management system for a medical college, which includes
+                features such as scheduling, clinical training management, student grouping, and evaluations.<br><br>
+                I am constantly working to improve myself by learning new technologies, participating in developer
+                communities, and working on practical projects. I'm committed to clean, scalable code and delivering
+                smart and efficient solutions.
+            </div>
+            <div class="cv-section">
+                <h3>Skills</h3>
+                <ul class="cv-list">
+                    <li>ASP.NET Core &amp; C#</li>
+                    <li>Postman </li>
+                    <li>SQL</li>
+                    <li>API</li>
+                    <li>Problem Solving</li>
+                    <li>Algorithms </li>
+                    <li>Communication </li>
+                    <li>Firebase </li>
+                    <li>GitHub </li>
+                    <li>HTML </li>
+                    <li>Java Script </li>
+                    <li>Css </li>
+                    <li>JQuery </li>
+                    <li>Bootstrap </li>
+                </ul>
+            </div>
+            <div class="cv-section">
+                <h3>Education</h3>
+                <div class="cv-edu">
+                    <span class="cv-edu-title">B.S in Computer Science, Minor in Business Administration</span>
+                    <span class="cv-edu-date">Hebron University</span>
+                </div>
+            </div>
+            <div class="cv-section">
+                <h3>Projects</h3>
+                <div class="cv-exp">
+                    <span class="cv-exp-title">Clinical Training System</span>
+                    <span class="cv-exp-date">2025</span><br />
+                    <span>
+                        Designed and implemented a comprehensive system for managing the medical college's clinical
+                        training, scheduling, and student evaluation.
+                    </span>
+                </div>
+            </div>
+            <div class="cv-section">
+                <h3>Training / Internships</h3>
+                <div class="cv-exp">
+                    <span class="cv-exp-title">Graphic Designer & Game Development Trainee – Moffaker Company</span>
+                    <span class="cv-exp-date">6-month Training</span><br />
+                    <ul class="cv-list">
+                        <li>Completed a six-month training program as a Graphic Designer.</li>
+                        <li>Worked on designing visual content and marketing materials using professional design tools.
+                        </li>
+                        <li>Received hands-on training in game development using Unity, including asset design and basic
+                            game mechanics.</li>
+                    </ul>
+                </div>
+                <div class="cv-exp">
+                    <span class="cv-exp-title">Front-End Development Trainee – Elite Company</span>
+                    <span class="cv-exp-date">Ongoing Training</span><br />
+                    <ul class="cv-list">
+                        <li>Currently receiving practical training in Front-End Development.</li>
+                        <li>Work includes building responsive interfaces using HTML, CSS, JavaScript, Bootstrap, and
+                            jQuery.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+    </div>
 </body>
+
 </html>
